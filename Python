@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 11 2024
+@author: Prince
+
+Note : semicolon at line ends are optional b'coz in python no need of terminator
+
+About program : This program takes two numbers and displays biger one and also identifies if both are same,
+and print's sum of them as well, at last it ask if you want to run it again or not
+"""
+response = "yes"
+print("------------------------------------------------");
+while(response=="yes"):
+    num1 = eval(input("Enter any number1 : "));
+    num2 = eval(input("Enter any number2 : "));
+    if(num1>num2):
+        print('\n',num1,"is greater than",num2);
+    elif(num2>num1):
+        print('\n',num2,"is greater than",num1);
+    elif(num1==num2):
+        print("\nBoth the numbers are equal",num1,'=',num2);
+    else:
+        print("\nInvalid number entered");
+        
+    print("------------------------------------------------");
+    sum = num1 + num2;    
+    print("The sum of",num1,'+',num2,"is",sum);
+    response = input("Want to run the program again type yes, if no then type no : ");
+    print("------------------------------------------------");
+    
+    
+               
+    
+
+
